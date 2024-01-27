@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Page</title>
+    <style>
+        body {
+            background-color: #3498db; /* Blue background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #loading-logo {
+            width: 100px; /* Adjust the logo size as needed */
+            height: 100px;
+        }
+
+        /* Add your loading animation styles here */
+    </style>
+</head>
+<body>
+    <div id="loading-container">
+        <img id="loading-logo" src="logo.png" alt="Logo">
+        <!-- Add your loading animation HTML here if needed -->
+    </div>
+
+    <script>
+        // Wait for 3 seconds and then redirect
+        setTimeout(function() {
+            window.location.href = 'login.html';
+        }, 3000);
+    </script>
+</body>
+</html>

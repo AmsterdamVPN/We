@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise - Home</title>
+    <style>
+        body {
+            background-color: #3498db; /* Blue background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        #header {
+            background-color: #fff; /* White header background */
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #header h1 {
+            margin: 0;
+            color: #3498db; /* Blue text color */
+        }
+
+        #menu {
+            background-color: #fff; /* White menu background */
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #3498db; /* Blue text color */
+        }
+
+        #content {
+            padding: 20px;
+            margin-bottom: 60px; /* Adjusted to accommodate the menu height */
+        }
+
+        #balance,
+        #transaction-history,
+        #buttons {
+            background-color: #fff; /* White content background */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #buttons button {
+            padding: 15px;
+            width: 30%;
+            background-color: #3498db; /* Blue button color */
+            color: #fff; /* White button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #buttons button:hover {
+            background-color: #2980b9; /* Slightly darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Rise</h1>
+    </div>
+
+    <div id="content">
+        <div id="balance">
+            <h2>Balance</h2>
+            <p>€5,000.00</p>
+        </div>
+
+        <div id="buttons">
+            <button>Receive Money</button>
+            <button>Send Money</button>
+            <button>Add Money</button>
+        </div>
+
+        <div id="transaction-history">
+            <h2>Transaction History</h2>
+            <ul>
+                <li>Amazon - Received €50.00</li>
+                <li>Uber - Sent €30.00</li>
+                <li>Salary - Added €100.00</li>
+                <li>Starbucks - Received €10.00</li>
+                <li>Netflix - Sent €15.00</li>
+                <li>Etsy - Added €200.00</li>
+                <li>Gas Station - Sent €40.00</li>
+                <li>Zara - Received €20.00</li>
+                <li>Freelance Work - Added €60.00</li>
+                <li>Pharmacy - Sent €25.00</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="menu">
+        <a href="home.html">Home</a>
+        <a href="cards.html">Cards</a>
+        <a href="crypto.html">Crypto</a>
+        <a href="options.html">Options</a>
+    </div>
+</body>
+</html>

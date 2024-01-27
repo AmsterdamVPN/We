@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise - Cards</title>
+    <style>
+        body {
+            background-color: #3498db; /* Blue background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        #header {
+            background-color: #fff; /* White header background */
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #header h1 {
+            margin: 0;
+            color: #3498db; /* Blue text color */
+        }
+
+        #menu {
+            background-color: #fff; /* White menu background */
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #3498db; /* Blue text color */
+        }
+
+        #content {
+            padding: 20px;
+            margin-bottom: 60px; /* Adjusted to accommodate the menu height */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background: linear-gradient(to bottom, #3498db, #87cefa); /* Blue to light blue gradient */
+            border-radius: 10px;
+            padding: 20px;
+            color: #fff; /* White text color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            position: relative;
+            width: 100%; /* Full width on mobile */
+        }
+
+        .card::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            left: 10px;
+            border: 2px solid #fff; /* White border */
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card-number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+        }
+
+        .card-buttons {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically on mobile */
+            align-items: flex-start; /* Align buttons to the left on mobile */
+            margin-top: 20px;
+        }
+
+        .card-buttons button {
+            padding: 15px;
+            width: 100%; /* Full width on mobile */
+            background-color: #3498db; /* Blue button color */
+            color: #fff; /* White button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px; /* Adjusted margin between buttons on mobile */
+        }
+
+        .card-buttons button:hover {
+            background-color: #2980b9; /* Slightly darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Rise</h1>
+    </div>
+
+    <div id="content">
+        <div class="card">
+            <h2>Visa</h2>
+            <div class="card-number">**** 1234</div>
+            <div class="card-buttons">
+                <button>Add Money</button>
+                <button>Card Details</button>
+                <button>Freeze Card</button>
+            </div>
+        </div>
+        <div class="card">
+            <h2>MasterCard</h2>
+            <div class="card-number">**** 5678</div>
+            <div class="card-buttons">
+                <button>Add Money</button>
+                <button>Card Details</button>
+                <button>Freeze Card</button>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Visa</h2>
+            <div class="card-number">**** 9012</div>
+            <div class="card-buttons">
+                <button>Add Money</button>
+                <button>Card Details</button>
+                <button>Freeze Card</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu">
+        <a href="home.html">Home</a>
+        <a href="cards.html">Cards</a>
+        <a href="crypto.html">Crypto</a>
+        <a href="options.html">Options</a>
+    </div>
+</body>
+</html>
